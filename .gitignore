@@ -1,0 +1,19 @@
+.DS_Store
+node_modules
+.idea
+package-lock.json
+/build
+.vscode/
+.idea/
+vite.config.*s.*
+
+# Docker
+*.log
+.env.local
+.env.*.local
+
+# Startup scripts
+frontend.log
+backend.log
+.frontend.pid
+.backend.pid

@@ -138,29 +138,8 @@ Required environment variables:
 - `VITE_OPENAI_API_KEY` - OpenAI API key (optional)
 - `VITE_GEMINI_API_KEY` - Google Gemini API key (optional)
 
-### 4. Start Development Server
 
-**Option 1: Using npm scripts**
-```bash
-npm run dev          # Start frontend (port 4028)
-npm run start:all    # Start all services (if backend exists)
-```
-
-**Option 2: Using startup scripts**
-```bash
-./start.sh start     # Linux/macOS
-start.bat            # Windows
-```
-
-**Option 3: Using Make**
-```bash
-make start-all       # Start all services
-make help            # View all commands
-```
-
-The application will be available at **http://localhost:4028**
-
-### 5. Build for Production
+### 4. Build for Production
 ```bash
 npm run build        # Creates optimized build in /build
 npm run preview      # Preview production build
@@ -185,56 +164,6 @@ npm run preview      # Preview production build
 *Configure each step with precision*
 
 ---
-
-## 📁 Project Structure
-
-```
-flowmaster-ai/
-├── public/                 # Static assets
-├── src/                    # Source code (see below)
-├── .env.example            # Environment template
-├── docker-compose.yml      # Docker orchestration
-├── Dockerfile              # Production Docker image
-├── package.json            # Dependencies and scripts
-├── vite.config.js          # Vite configuration
-├── tailwind.config.js      # Tailwind customization
-└── README.md               # This file
-```
-
-<details>
-<summary><b>📂 Source Code Structure</b> (Click to expand)</summary>
-
-```
-src/
-├── components/             # Reusable UI components
-│   ├── ui/                # Base components (Button, Input, Select, etc.)
-│   ├── AppIcon.jsx        # Icon wrapper
-│   └── ErrorBoundary.jsx  # Error handling
-├── pages/                 # Page components
-│   ├── dashboard/         # Dashboard with metrics
-│   ├── workflow-builder/  # Visual workflow editor
-│   ├── execution-monitor/ # Real-time tracking
-│   ├── run-history/       # Execution history
-│   ├── steps-configuration/ # Step configuration
-│   ├── settings/          # App settings
-│   └── login/             # Authentication
-├── hooks/                 # Custom React hooks
-│   ├── useAsync.js        # Async operations
-│   ├── useLocalStorage.js # Persistent state
-│   ├── useDebounce.js     # Debounced values
-│   └── useMediaQuery.js   # Responsive design
-├── services/              # API services
-│   └── api.js             # Centralized API client
-├── utils/                 # Utility functions
-│   ├── logger.js          # Logging system
-│   ├── performance.js     # Performance monitoring
-│   └── envValidator.js    # Environment validation
-├── styles/                # Global styles
-├── App.jsx                # Main app component
-├── Routes.jsx             # Route configuration
-└── Index.jsx              # Application entry point
-```
-</details>
 
 ## 🎨 Design System
 
@@ -314,36 +243,6 @@ The build output will be in the `/build` directory.
 
 ## 🔧 Configuration
 
-### Environment Variables
-
-Copy `.env.example` to `.env` and configure:
-
-```bash
-# Backend API (when you add a backend)
-VITE_API_BASE_URL=http://localhost:8080
-
-# Development
-VITE_DEBUG=true
-VITE_USE_MOCK_DATA=true
-
-# AI Providers (optional - add when needed)
-VITE_OPENAI_API_KEY=your-key
-VITE_GEMINI_API_KEY=your-key
-```
-
-### Path Aliases
-
-Clean imports are configured:
-
-```javascript
-// ✅ Use absolute imports
-import Button from 'components/ui/Button';
-import { useAsync } from 'hooks';
-import logger from 'utils/logger';
-
-// ❌ Instead of relative paths
-import Button from '../../../components/ui/Button';
-```
 
 ## 🎯 Roadmap
 
@@ -358,20 +257,6 @@ import Button from '../../../components/ui/Button';
 - [ ] **Mobile App** - React Native mobile client
 - [ ] **Analytics Dashboard** - Advanced analytics and insights
 
-## 📚 Documentation
-
-- **[GIT_COMMANDS.md](./GIT_COMMANDS.md)** - Git workflow reference
-- **[QUICK_START.md](./QUICK_START.md)** - Quick start guide
-- **[PROJECT_ANALYSIS.md](./PROJECT_ANALYSIS.md)** - Technical analysis
-
-## 🤝 Contributing
-
-Contributions are welcome! Please:
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
 
 ## 📄 License
 
@@ -379,7 +264,6 @@ MIT License - see [LICENSE](./LICENSE) file for details.
 
 ## 🙏 Credits
 
-- **Built with** [Rocket.new](https://rocket.new)
 - **Icons** by [Lucide](https://lucide.dev)
 - **UI** inspired by [shadcn/ui](https://ui.shadcn.com)
 
@@ -392,6 +276,6 @@ MIT License - see [LICENSE](./LICENSE) file for details.
 ---
 
 <p align="center">
-  <b>Built with ❤️ by Anthony Tomas</b><br>
+  <b>Built by Anthony Tomas</b><br>
   <sub>Master your productivity with FlowMaster AI</sub>
 </p>

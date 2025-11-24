@@ -1,58 +1,114 @@
-# 🤖 AI Task Automation Agent
+# 🚀 FlowMaster AI
 
-A modern, full-featured AI-powered task automation platform built with React. Create, manage, and monitor automated workflows with an intuitive visual interface and real-time execution tracking.
+**Master your workflows with intelligent automation.** FlowMaster AI is a powerful task automation platform that transforms complex workflows into seamless, intelligent processes. Design, deploy, and monitor automated workflows with an intuitive visual interface while AI handles the execution with precision and reliability.
 
 ![React](https://img.shields.io/badge/React-18.2-61DAFB?style=flat&logo=react)
 ![Vite](https://img.shields.io/badge/Vite-5.0-646CFF?style=flat&logo=vite)
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4-38B2AC?style=flat&logo=tailwind-css)
+![TypeScript](https://img.shields.io/badge/TypeScript-Ready-3178C6?style=flat&logo=typescript)
+![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?style=flat&logo=docker)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 
-## 📑 Table of Contents
+<p align="center">
+  <a href="#-key-features">Features</a> •
+  <a href="#-quick-start">Quick Start</a> •
+  <a href="#-demo">Demo</a> •
+  <a href="#-tech-stack">Tech Stack</a> •
+  <a href="#-deployment">Deployment</a>
+</p>
 
-- [Key Features](#-key-features)
-- [Prerequisites](#-prerequisites)
-- [Quick Start](#-quick-start)
-- [Project Structure](#-project-structure)
-- [Styling & Theming](#-styling--theming)
-- [Docker Deployment](#-docker-deployment)
-- [Available Scripts](#-available-scripts)
-- [Development](#-development)
-- [Troubleshooting](#-troubleshooting)
-- [Documentation](#-documentation)
-- [Contributing](#-contributing)
-- [License](#-license)
+---
+
+## 🎬 Demo
+
+![FlowMaster AI Dashboard](https://via.placeholder.com/800x400/667eea/ffffff?text=FlowMaster+AI+Dashboard)
+
+> **Live Demo**: [Coming Soon]
+> 
+> **Screenshots**: Check out the [Screenshots](#-screenshots) section below
 
 ## ✨ Key Features
 
-### 🎯 Workflow Management
-- **Visual Workflow Builder** - Drag-and-drop interface for creating automation workflows
-- **Step Configuration** - Configure HTTP requests, data transformations, and AI integrations
-- **Real-time Validation** - Instant feedback on workflow configuration
-- **Template Library** - Pre-built workflow templates for common tasks
+### 🎯 **Visual Workflow Builder**
+Create powerful automation workflows with an intuitive drag-and-drop interface. No coding required—just connect the blocks and watch your automation come to life.
 
-### 📊 Monitoring & Analytics
-- **Live Execution Monitor** - Real-time tracking of running workflows
-- **Execution History** - Complete audit trail with filtering and search
-- **Performance Metrics** - Dashboard with success rates and execution times
-- **Log Viewer** - Detailed logs with syntax highlighting and filtering
+- **Drag & Drop Interface** - Intuitive visual workflow design
+- **Pre-built Templates** - Start fast with ready-made workflow templates
+- **Step Library** - Extensive collection of automation steps
+- **Real-time Validation** - Instant feedback as you build
 
-### 🔧 Technical Stack
+### 📊 **Real-time Monitoring**
+Track every execution with comprehensive monitoring and detailed analytics.
+
+- **Live Dashboard** - Monitor active workflows in real-time
+- **Execution History** - Complete audit trail with advanced filtering
+- **Performance Metrics** - Success rates, execution times, and trends
+- **Detailed Logs** - Syntax-highlighted logs with search and filtering
+
+### 🔧 **Step Configuration**
+Configure each step with precision using our powerful configuration system.
+
+- **HTTP Requests** - API calls with full customization
+- **Data Transformations** - Transform and manipulate data on the fly
+- **AI Integrations** - Connect with OpenAI, Gemini, Claude, and more
+- **Conditional Logic** - Smart branching based on conditions
+- **Error Handling** - Robust error handling and retry mechanisms
+
+### 🎨 **Modern UI/UX**
+Beautiful, responsive interface that works seamlessly across all devices.
+
+- **Responsive Design** - Perfect on desktop, tablet, and mobile
+- **Dark Mode Ready** - Easy theme customization
+- **Smooth Animations** - Delightful micro-interactions
+- **Accessibility** - Built with a11y best practices
+
+### 🚀 **Production Ready**
+Enterprise-grade features for reliability and scalability.
+
+- **Docker Support** - One-command deployment
+- **Environment Validation** - Automatic configuration checks
+- **Error Tracking** - Comprehensive logging system
+- **Performance Monitoring** - Built-in performance tracking
+- **TypeScript Ready** - Optional type safety
+
+---
+
+## 🛠️ Tech Stack
+
+FlowMaster AI is built with modern, production-ready technologies:
+
+### **Frontend**
 - **React 18.2** - Latest React with concurrent features
 - **Vite 5.0** - Lightning-fast build tool and HMR
+- **TailwindCSS 3.4** - Utility-first CSS with custom design system
 - **Redux Toolkit** - Efficient state management
-- **TailwindCSS 3.4** - Utility-first styling with custom design system
-- **React Router v6** - Client-side routing
+- **React Router v6** - Declarative routing
+
+### **UI & Visualization**
 - **Lucide Icons** - Beautiful, consistent iconography
 - **Recharts & D3.js** - Advanced data visualization
 - **Framer Motion** - Smooth animations and transitions
 - **React Hook Form** - Performant form handling
 
+### **Development Tools**
+- **TypeScript** - Optional type safety
+- **ESLint & Prettier** - Code quality and formatting
+- **Docker** - Containerized deployment
+- **Axios** - HTTP client with interceptors
+
+### **Architecture**
+- **Custom Hooks** - Reusable logic (useAsync, useLocalStorage, useDebounce)
+- **API Service Layer** - Centralized API management
+- **Performance Monitoring** - Built-in performance tracking
+- **Environment Validation** - Automatic config validation
+
+---
+
 ## 📋 Prerequisites
 
-Before you begin, ensure you have the following installed:
-- **Node.js** (v18.x or higher recommended)
-- **npm** (v9.x or higher) or **yarn**
-- **Git** (for cloning the repository)
+- **Node.js** v18.x or higher
+- **npm** v9.x or higher (or yarn)
+- **Docker** (optional, for containerized deployment)
 
 ## 🚀 Quick Start
 
@@ -110,216 +166,232 @@ npm run build        # Creates optimized build in /build
 npm run preview      # Preview production build
 ```
 
-## 📁 Project Structure
+## 📸 Screenshots
 
-```
-ai-task-automation-agent/
-├── public/
-│   └── assets/              # Static assets (images, icons, manifest)
-├── src/
-│   ├── components/          # Reusable UI components
-│   │   ├── ui/             # Base UI components (Button, Input, etc.)
-│   │   ├── AppIcon.jsx     # Icon wrapper component
-│   │   └── ErrorBoundary.jsx
-│   ├── pages/              # Page components
-│   │   ├── dashboard/      # Dashboard with metrics and task list
-│   │   ├── workflow-builder/ # Visual workflow editor
-│   │   ├── execution-monitor/ # Real-time execution tracking
-│   │   ├── run-history/    # Execution history and logs
-│   │   ├── steps-configuration/ # Step configuration forms
-│   │   ├── settings/       # Application settings
-│   │   ├── login/          # Authentication page
-│   │   └── NoFound.jsx     # 404 page
-│   ├── utils/              # Utility functions
-│   │   ├── cn.js          # Class name utilities
-│   │   └── suppressDevToolsWarnings.js
-│   ├── styles/             # Global styles
-│   │   ├── tailwind.css   # Tailwind imports
-│   │   └── index.css      # Custom CSS
-│   ├── App.jsx             # Main app component
-│   ├── Routes.jsx          # Route configuration
-│   └── Index.jsx           # Application entry point
-├── .env                    # Environment variables (gitignored)
-├── .env.example            # Environment template
-├── index.html              # HTML template
-├── package.json            # Dependencies and scripts
-├── vite.config.js          # Vite configuration with aliases
-├── jsconfig.json           # JavaScript configuration
-├── tailwind.config.js      # Tailwind customization
-├── postcss.config.js       # PostCSS configuration
-├── Dockerfile              # Production Docker image
-├── docker-compose.yml      # Docker orchestration
-├── start.sh                # Startup script (Linux/macOS)
-├── start.bat               # Startup script (Windows)
-├── Makefile                # Make commands
-└── README.md               # This file
-```
+### Dashboard
+![Dashboard](https://via.placeholder.com/600x400/667eea/ffffff?text=Dashboard+View)
+*Monitor all your workflows and executions at a glance*
 
-## 🎨 Styling & Theming
+### Workflow Builder
+![Workflow Builder](https://via.placeholder.com/600x400/667eea/ffffff?text=Workflow+Builder)
+*Visual drag-and-drop workflow creation*
 
-This project uses a custom design system built on TailwindCSS:
+### Execution Monitor
+![Execution Monitor](https://via.placeholder.com/600x400/667eea/ffffff?text=Execution+Monitor)
+*Real-time execution tracking with detailed logs*
 
-### Design System Features
-- **Custom Color Palette** - Semantic color variables for consistent theming
-- **Fluid Typography** - Responsive text sizing
-- **Custom Animations** - Smooth transitions and micro-interactions
-- **Dark Mode Ready** - CSS variables for easy theme switching
-- **Component Variants** - Using `class-variance-authority` for type-safe variants
-
-### TailwindCSS Plugins
-- `@tailwindcss/forms` - Beautiful form styling
-- `@tailwindcss/typography` - Rich text formatting
-- `@tailwindcss/aspect-ratio` - Responsive aspect ratios
-- `@tailwindcss/container-queries` - Container-based responsive design
-- `tailwindcss-animate` - Animation utilities
-- `tailwindcss-fluid-type` - Fluid typography
-
-### Using Path Aliases
-The project is configured with path aliases for clean imports:
-
-```javascript
-// Instead of relative paths:
-import Button from '../../../components/ui/Button';
-
-// Use clean absolute imports:
-import Button from 'components/ui/Button';
-import Icon from 'components/AppIcon';
-import { cn } from 'utils/cn';
-```
-
-## 🐳 Docker Deployment
-
-### Quick Deploy with Docker
-
-```bash
-# Production deployment
-./deploy.sh prod
-
-# Development with hot reload
-./deploy.sh dev
-
-# Using Docker Compose directly
-docker-compose up -d --build
-```
-
-### Docker Commands
-```bash
-make prod          # Build and start production container
-make dev           # Build and start development container
-make stop          # Stop all containers
-make logs          # View logs
-make clean         # Clean up containers and images
-```
-
-See [DOCKER_DEPLOYMENT.md](./DOCKER_DEPLOYMENT.md) for complete Docker documentation.
-
-## 📜 Available Scripts
-
-| Command | Description |
-|---------|-------------|
-| `npm run dev` | Start development server (port 4028) |
-| `npm run build` | Build for production |
-| `npm run preview` | Preview production build |
-| `npm run start:all` | Start all services (frontend + backend) |
-| `./start.sh start` | Auto-start script (Linux/macOS) |
-| `start.bat` | Auto-start script (Windows) |
-| `make help` | View all Make commands |
-
-## 🧪 Development
-
-### Code Organization
-- **Components** - Reusable UI components in `src/components/`
-- **Pages** - Route-based page components in `src/pages/`
-- **Utils** - Helper functions in `src/utils/`
-- **Styles** - Global styles in `src/styles/`
-
-### Adding New Pages
-1. Create page component in `src/pages/your-page/`
-2. Add route in `src/Routes.jsx`:
-```javascript
-<Route path="/your-page" element={<YourPage />} />
-```
-
-### Component Development
-Use the established patterns:
-```javascript
-import Icon from 'components/AppIcon';
-import Button from 'components/ui/Button';
-
-const MyComponent = () => {
-  return (
-    <div className="p-4">
-      <Button variant="primary" iconName="Plus">
-        Add Item
-      </Button>
-    </div>
-  );
-};
-```
-
-## 🐛 Troubleshooting
-
-### Common Issues
-
-**Port 4028 already in use:**
-```bash
-# Find and kill the process
-lsof -ti:4028 | xargs kill -9
-
-# Or change port in vite.config.js
-```
-
-**Import errors:**
-```bash
-# Clear cache and reinstall
-rm -rf node_modules package-lock.json
-npm install
-```
-
-**TypeScript errors:**
-```bash
-# Clear TypeScript cache
-rm -rf ~/.cache/typescript
-```
-
-See [FIXES.md](./FIXES.md) for detailed troubleshooting and all fixes applied.
-
-## 📚 Documentation
-
-- **[QUICK_START.md](./QUICK_START.md)** - Docker quick start guide
-- **[DOCKER_DEPLOYMENT.md](./DOCKER_DEPLOYMENT.md)** - Complete Docker deployment guide
-- **[STARTUP_GUIDE.md](./STARTUP_GUIDE.md)** - Auto-start scripts documentation
-- **[FIXES.md](./FIXES.md)** - All bug fixes and solutions
-- **[PROJECT_ANALYSIS.md](./PROJECT_ANALYSIS.md)** - Complete project analysis
-
-## 🤝 Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🙏 Acknowledgments
-
-- **Built with** [Rocket.new](https://rocket.new)
-- **Powered by** React, Vite, and TailwindCSS
-- **Icons by** [Lucide](https://lucide.dev)
-- **UI Components** inspired by [shadcn/ui](https://ui.shadcn.com)
-
-## 📞 Support
-
-For issues and questions:
-- Check [FIXES.md](./FIXES.md) for common solutions
-- Review [TROUBLESHOOTING.md](./TROUBLESHOOTING.md)
-- Open an issue on GitHub
+### Step Configuration
+![Step Configuration](https://via.placeholder.com/600x400/667eea/ffffff?text=Step+Configuration)
+*Configure each step with precision*
 
 ---
 
-**Built with ❤️ using modern web technologies**
+## 📁 Project Structure
+
+```
+flowmaster-ai/
+├── public/                 # Static assets
+├── src/                    # Source code (see below)
+├── .env.example            # Environment template
+├── docker-compose.yml      # Docker orchestration
+├── Dockerfile              # Production Docker image
+├── package.json            # Dependencies and scripts
+├── vite.config.js          # Vite configuration
+├── tailwind.config.js      # Tailwind customization
+└── README.md               # This file
+```
+
+<details>
+<summary><b>📂 Source Code Structure</b> (Click to expand)</summary>
+
+```
+src/
+├── components/             # Reusable UI components
+│   ├── ui/                # Base components (Button, Input, Select, etc.)
+│   ├── AppIcon.jsx        # Icon wrapper
+│   └── ErrorBoundary.jsx  # Error handling
+├── pages/                 # Page components
+│   ├── dashboard/         # Dashboard with metrics
+│   ├── workflow-builder/  # Visual workflow editor
+│   ├── execution-monitor/ # Real-time tracking
+│   ├── run-history/       # Execution history
+│   ├── steps-configuration/ # Step configuration
+│   ├── settings/          # App settings
+│   └── login/             # Authentication
+├── hooks/                 # Custom React hooks
+│   ├── useAsync.js        # Async operations
+│   ├── useLocalStorage.js # Persistent state
+│   ├── useDebounce.js     # Debounced values
+│   └── useMediaQuery.js   # Responsive design
+├── services/              # API services
+│   └── api.js             # Centralized API client
+├── utils/                 # Utility functions
+│   ├── logger.js          # Logging system
+│   ├── performance.js     # Performance monitoring
+│   └── envValidator.js    # Environment validation
+├── styles/                # Global styles
+├── App.jsx                # Main app component
+├── Routes.jsx             # Route configuration
+└── Index.jsx              # Application entry point
+```
+</details>
+
+## 🎨 Design System
+
+FlowMaster AI features a custom design system built on TailwindCSS:
+
+- **🎨 Custom Color Palette** - Semantic colors for consistent theming
+- **📱 Fully Responsive** - Mobile-first design approach
+- **🌙 Dark Mode Ready** - Easy theme customization
+- **✨ Smooth Animations** - Framer Motion powered transitions
+- **♿ Accessible** - WCAG compliant components
+- **🎯 Component Library** - Reusable, type-safe components
+
+## 🐳 Deployment
+
+### Docker (Recommended)
+
+Deploy with a single command:
+
+```bash
+# Production
+./deploy.sh prod
+
+# Development
+./deploy.sh dev
+```
+
+Or using Docker Compose:
+
+```bash
+docker-compose up -d --build
+```
+
+### Cloud Platforms
+
+<details>
+<summary><b>Deploy to AWS, GCP, or DigitalOcean</b></summary>
+
+#### AWS ECS/Fargate
+```bash
+docker build -t flowmaster-ai .
+docker tag flowmaster-ai:latest <account>.dkr.ecr.<region>.amazonaws.com/flowmaster-ai:latest
+docker push <account>.dkr.ecr.<region>.amazonaws.com/flowmaster-ai:latest
+```
+
+#### Google Cloud Run
+```bash
+gcloud builds submit --tag gcr.io/<project>/flowmaster-ai
+gcloud run deploy --image gcr.io/<project>/flowmaster-ai --platform managed
+```
+
+#### DigitalOcean App Platform
+- Connect your GitHub repository
+- App Platform auto-detects Dockerfile
+- Configure environment variables in dashboard
+
+</details>
+
+### Manual Deployment
+
+```bash
+npm run build        # Build for production
+npm run preview      # Preview production build
+```
+
+The build output will be in the `/build` directory.
+
+## 📜 Available Commands
+
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start development server |
+| `npm run build` | Build for production |
+| `npm run preview` | Preview production build |
+| `npm run start:all` | Start all services |
+| `make help` | View all Make commands |
+| `./deploy.sh prod` | Deploy with Docker |
+
+## 🔧 Configuration
+
+### Environment Variables
+
+Copy `.env.example` to `.env` and configure:
+
+```bash
+# Backend API (when you add a backend)
+VITE_API_BASE_URL=http://localhost:8080
+
+# Development
+VITE_DEBUG=true
+VITE_USE_MOCK_DATA=true
+
+# AI Providers (optional - add when needed)
+VITE_OPENAI_API_KEY=your-key
+VITE_GEMINI_API_KEY=your-key
+```
+
+### Path Aliases
+
+Clean imports are configured:
+
+```javascript
+// ✅ Use absolute imports
+import Button from 'components/ui/Button';
+import { useAsync } from 'hooks';
+import logger from 'utils/logger';
+
+// ❌ Instead of relative paths
+import Button from '../../../components/ui/Button';
+```
+
+## 🎯 Roadmap
+
+- [ ] **Backend Integration** - REST API with Node.js/Express
+- [ ] **Database Support** - PostgreSQL with Supabase
+- [ ] **User Authentication** - OAuth and JWT
+- [ ] **AI Provider Integration** - OpenAI, Gemini, Claude
+- [ ] **Workflow Scheduling** - Cron-based scheduling
+- [ ] **Webhook Support** - Trigger workflows via webhooks
+- [ ] **Team Collaboration** - Multi-user support
+- [ ] **Workflow Marketplace** - Share and discover workflows
+- [ ] **Mobile App** - React Native mobile client
+- [ ] **Analytics Dashboard** - Advanced analytics and insights
+
+## 📚 Documentation
+
+- **[GIT_COMMANDS.md](./GIT_COMMANDS.md)** - Git workflow reference
+- **[QUICK_START.md](./QUICK_START.md)** - Quick start guide
+- **[PROJECT_ANALYSIS.md](./PROJECT_ANALYSIS.md)** - Technical analysis
+
+## 🤝 Contributing
+
+Contributions are welcome! Please:
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
+
+## 📄 License
+
+MIT License - see [LICENSE](./LICENSE) file for details.
+
+## 🙏 Credits
+
+- **Built with** [Rocket.new](https://rocket.new)
+- **Icons** by [Lucide](https://lucide.dev)
+- **UI** inspired by [shadcn/ui](https://ui.shadcn.com)
+
+## 📞 Connect
+
+- **GitHub**: [@aanthonytomas](https://github.com/aanthonytomas)
+- **Repository**: [FlowMaster-AI](https://github.com/aanthonytomas/FlowMaster-AI)
+- **Issues**: [Report a bug](https://github.com/aanthonytomas/FlowMaster-AI/issues)
+
+---
+
+<p align="center">
+  <b>Built with ❤️ by Anthony Tomas</b><br>
+  <sub>Master your productivity with FlowMaster AI</sub>
+</p>
